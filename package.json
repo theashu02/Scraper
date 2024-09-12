@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=development nodemon backend/server.js",
-    "start": "cross-env NODE_ENV=production node backend/server.js",
+    "start": "env NODE_ENV=production node backend/server.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
