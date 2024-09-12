@@ -11,6 +11,7 @@ const __dirname = path.resolve();
 puppeteer.use(StealthPlugin());
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
@@ -104,6 +105,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("listening on port http://localhost:5000");
 });
