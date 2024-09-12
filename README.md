@@ -17,10 +17,10 @@ git clone https://github.com/your-username/codechef-scraper.git
 cd codechef-scraper
 cd codechef-scraper/client
 npm install
-npm start
+npm run dev
 cd codechef-scraper/server
 npm install
-nodemon server.js
+npm run dev
 ```
 
 This will open the application in your default browser at http://localhost:3000. The page will reload automatically whenever you make changes to the source code.
